@@ -1,0 +1,26 @@
+
+
+.app-dashboard{
+    padding: 20px;
+}
+
+.img-dimention{
+    height: 400px;
+    width: 500px;
+}
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card-item{
+    width: 80%;
+    padding: 0;
+    margin-bottom: 30px;
+    flex-direction: row;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

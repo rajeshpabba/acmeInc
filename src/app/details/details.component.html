@@ -1,0 +1,25 @@
+<div class="container-fluid app-dashboard">
+  <div class="row cards-container">
+    <div class="card card-item">
+      <img
+        class="card-img-top img-dimention"
+        src="{{ item?.image_url }}"
+        alt="{{ item?.name }}"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ item?.name }}</h5>
+        <p class="card-text">
+          <b>Price: </b>{{ item?.price > 0 ? item?.price : 10 }}
+        </p>
+        <p class="card-text">
+          <b>Rating:</b> {{ item?.rating > 0 ? item?.rating : 1 }} / 5
+        </p>
+        <p class="card-text"><b>Contact:</b> {{ item?.display_phone }}</p>
+        <div>
+            <p><b>Address:</b> {{item?.location?.address1}}, {{item?.city}}, {{item?.country}} - {{item?.zip_code}}</p>
+        </div>
+        <a href="/items" class="btn btn-primary">Back to home</a>
+      </div>
+    </div>
+  </div>
+</div>

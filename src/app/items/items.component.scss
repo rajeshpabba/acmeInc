@@ -1,0 +1,23 @@
+
+.example-card{
+    max-width: 350px;
+    width: 100%;
+}
+.app-dashboard{
+    padding: 20px;
+}
+
+.img-dimention{
+    height: 300px;
+
+}
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card-item{
+    width: 300px; 
+    padding: 0;
+    margin-bottom: 30px;
+}

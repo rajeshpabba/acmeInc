@@ -1,0 +1,17 @@
+<div class="container-fluid app-dashboard">
+    <div class="row cards-container">
+      <div class="card card-item" *ngFor="let item of items?.businesses">
+        <img
+          class="card-img-top img-dimention"
+          src="{{item.image_url}}"
+          alt="{{item.name}}"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{item.name}}</h5>
+          <p class="card-text"><b>Price: </b>{{item.price > 0 ? item.price: 10}}</p>
+          <p class="card-text"><b>Rating:</b> {{item.rating > 0 ? item.rating : 1}} / 5</p>
+          <div class="btn btn-primary" (click)="goToDetails(item)">Go to details</div>
+        </div>
+      </div>
+    </div>
+  </div>
