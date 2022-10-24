@@ -6,10 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InterceptorService } from './services/interceptor.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatCardModule} from '@angular/material/card';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DetailsComponent } from './details/details.component';
 import { ItemsComponent } from './items/items.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -22,8 +22,8 @@ import { ItemsComponent } from './items/items.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    RouterModule,
     BrowserAnimationsModule ,
-    MatCardModule,
     NgbModule
   ],
   providers: [{
